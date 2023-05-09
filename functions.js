@@ -33,9 +33,9 @@ function price_car(pr) {
     $('#' + vdd).append('<h2> the car will be delievred to your adress </h2>')
 }
 
+var obj = {}
 function getMessage(event){
     event.preventDefault()
-    var obj = {}
     obj.name=$("#name1").val()
     obj.mail=$("#mail1").val()
     obj.message=$("#message1").val()

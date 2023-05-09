@@ -1,31 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title> OUR CARS</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
-    <script src="https://kit.fontawesome.com/e8cd52a294.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="car.css" />
-    <title>our cars</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class="topnav">
-        <a class="active" href="home.html">Home</a>
-        <a class="cars" href="ourCars.html">our cars</a>
-        <a class="about us" href="#aboutUs">about us</a>
-        <a href="#log-in">log-in <span> <i class="fa-regular fa-user fa-spin" style="color: #37d29e;"></i> </span> </a>
-      </div>
-  <div class="container"> 
-    <div id="carid"><img src="1.jpg" ></div>
-    <div id="carid"><img src="2.jpg" ></div>
-    <div id="carid"><img src="3.jpg" ></div>
-    <div id="carid"><img src="4.jpg" ></div>
-    <div id="carid"><img src="5.jpg" ></div>
-    <div id="carid"><img src="6.jpg" ></div>
-</div>
-        
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">CAR'S</span> HEAVEN</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="current"><a href="ourcars.HTML">OUR CARS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+
+        </div>
+
+        <section id="boxes" id="car1">
+            <div class="container">
+
+                <div class="box">
+                    <img src="1.png" alt="HTML Logo">
+                    <h1>HYUNDAI</h1>
+                    <p>
+                        It's easy to see why the all-new ELANTRA won the prestigious North American Car of the Year
+                        Awards™.
+                        From its progressive technology to daring style, this next-generation car challenges the status
+                        quo.
+                        And with the expanded line-up, including the high-performance N Line and fuel efficient Hybrid
+                        models,
+                        there's an award-winning ELANTRA for everyone.</p>
+                    <h3> 78,6 TND per day</h3>
+                    <div id ="box33">
+                        <input type="number" placeholder="how many days" id="days1">
+                    <input type="text" placeholder="enter your adress">
+                    <button id="btn1" class="button_1" onclick="price_car(this.id)" type="submit">rent</button>
+                    <div id="days11" ></div>
+                    </div>
+                    
+
+
+
+                </div>
+                <div class="box" id="car2">
+                    <img src="2.png" alt="CSS logo">
+                    <h1>MAZDA</h1>
+                    <p>From the driver's seat to each corner of the CX-90 Inline 6 Turbo, every detail was engineered in
+                        unison.
+                        The result is a front-engine, rear-biased, all-wheel-drive experience with you at the centre of
+                        the most
+                        immersive,
+                        performance-focused drive ever crafted in a 3-row Mazda SUV. </p>
+                    <h3> 98,6 TND per day</h3>
+                    <div id="box33">
+                        <input type="number" placeholder="how many days" id="days2">
+                    <input type="text" placeholder="enter your adress">
+                    <button id="btn2" class="button_1" onclick="price_car(this.id)" type="submit">rent</button>
+                    <div id="days12"></div>
+                    </div>
+                    
+
+
+                </div>
+                <div class="box" id="car3">
+                    <img src="3.png" alt="Graphics Logo">
+                    <h1>TOYOTA</h1>
+                    <p>Stand out in the Toyota Corolla car. It features impressive a thoughtful interior design and
+                        aggressive
+                        exterior stance that will make an impression everywhere you go. Or,
+                        turn heads with the iconic look of the impressive Toyota Prius. Its stylized interior touches
+                        help take your
+                        commute from boring to soaring.</p>
+                    <h3> 72 TND per day</h3>
+                    <div id="box33">
+                        <input type="number" placeholder="how many days" id="days3">
+                    <input type="text" placeholder="enter your adress">
+
+                    <button id="btn3" class="button_1" onclick="price_car(this.id)" type="submit">rent</button>
+                    </div>
+                    
+                    <div id="days13"></div>
+
+                </div>
+
+            </div>
+        </section>
+        <script src="functions.js"></script>
+
+    </div>
+    </div>
+
+
+
+
+    <footer>
+
+    </footer>
+
 </body>
-    
-    
+
 </html>
